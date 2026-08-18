@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background-color: #2e3b3a;
+    color: #efe6d2;
+    font-family: Georgia, serif;
+    padding: 3rem 1.5rem 5rem;
+  }
+  
+  .drawer-label {
+    max-width: 780px;
+    margin: 0 auto 3rem;
+    border-bottom: 1px dashed #cbb98f;
+    padding-bottom: 1.5rem;
+  }
+  
+  .drawer-eyebrow {
+    font-family: "Courier New", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #b8443b;
+  }
+  
+  .drawer-label h1 {
+    font-family: "Courier New", monospace;
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 0.4rem 0 0.6rem;
+    color: #f5f0e3;
+  }
+  
+  .drawer-sub {
+    margin: 0;
+    color: #c9d1cd;
+    font-style: italic;
+    font-size: 1rem;
+  }
+  
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .status {
+    font-family: "Courier New", monospace;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .status-loading {
+    color: #d8cfa9;
+  }
+  
+  .status-error {
+    color: #ffd9d4;
+    background-color: rgba(184, 68, 59, 0.25);
+    border: 1px solid #b8443b;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  
+  .search-wrap {
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+  }
+
+  .search-input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #24302f;
+    color: #efe6d2;
+    border: 1px solid #cbb98f;
+    font-family: "Courier New", monospace;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .search-input::placeholder {
+    color: #94a19c;
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: #b8443b;
+  }
+
+  .status--empty {
+    font-family: "Courier New", monospace;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #c9d1cd;
+    padding: 2rem 1rem;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.75rem;
+  }
+  
+  .quote-card {
+    background-color: #efe6d2;
+    color: #2a231d;
+    padding: 1.6rem 1.4rem 1.3rem;
+    border: 1px solid #e2d5b3;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
+  }
+  
+  .quote-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32);
+  }
+  
+  .card-number {
+    font-family: "Courier New", monospace;
+    font-size: 0.7rem;
+    color: #b8443b;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1.1rem;
+  }
+  
+  .card-quote {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    font-style: italic;
+    margin: 0 0 1rem;
+  }
+  
+  .card-author {
+    font-family: "Courier New", monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #5c5245;
+    border-top: 1px solid #e2d5b3;
+    padding-top: 0.6rem;
+    margin: 0;
+  }
+  
+  .drawer-footer {
+    max-width: 1100px;
+    margin: 3rem auto 0;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-size: 0.75rem;
+    color: #94a19c;
+  }
+  
+  @media (max-width: 480px) {
+    .drawer-label h1 {
+      font-size: 1.5rem;
+    }
+  }

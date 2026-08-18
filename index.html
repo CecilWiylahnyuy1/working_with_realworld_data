@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Catalog — Quotes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="drawer-label">
+    <span class="drawer-eyebrow">Drawer 7 — MISC.</span>
+    <h1>Card Catalog of Quotations</h1>
+    <p class="drawer-sub">A small, dynamically-filed collection. Pulled fresh from the stacks on every visit.</p>
+  </header>
+
+  <main>
+    <p id="loading" class="status status--loading" role="status">
+      Filing cards<span class="dots"><span>.</span><span>.</span><span>.</span></span>
+    </p>
+
+    <p id="error" class="status status--error" role="alert" hidden>
+      Something went wrong loading this data — please try again later.
+    </p>
+
+    <div class="search-wrap">
+      <input
+        type="text"
+        id="search-input"
+        class="search-input"
+        placeholder="Search by author..."
+        aria-label="Search quotes by author"
+      >
+    </div>
+
+    <p id="no-results" class="status status--empty" hidden>
+      No cards match that search.
+    </p>
+
+    <section id="card-grid" class="card-grid" aria-live="polite">
+      <!-- cards are rendered here entirely from fetched data -->
+    </section>
+  </main>
+
+  <footer class="drawer-footer">
+    <p>End of drawer. Refresh to reshuffle the stacks.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
