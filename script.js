@@ -93,7 +93,8 @@ function handleSearchInput(event) {
   const filtered = searchTerm === ""
     ? allQuotes
     : allQuotes.filter((item) =>
-        item.author.toLowerCase().includes(searchTerm)
+        item.author.toLowerCase().includes(searchTerm)||
+        item.quote.toLowerCase().includes(searchTerm)
       );
 
   noResultsEl.hidden = filtered.length !== 0;
